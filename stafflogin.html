@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+        <script src="js/jquery-3.1.1.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/jquery.form.js"
+            ></script>
+        <style>
+            body{
+                background-image: url(img/2N1A8040.JPG);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 70%;
+                color: white;
+                }
+        
+            .maindiv{
+                margin-left: 40%;
+                margin-top: 40%;
+                margin-bottom: 0%;
+                margin-right: 0%;
+                
+            }
+            
+            .login{
+               
+                height: 100px;
+                width: 50%;
+            }
+            .longin2{
+                
+                height: 100px;
+                width: 50%;
+            }
+            a{
+               
+                text-decoration: none;
+                color: aliceblue;
+               
+            
+                
+            }
+            .btn{
+                align-content: center;
+                text-align: center justify;
+                padding: 2%;
+              
+                width: 32%;
+            }
+            span{
+                color: red;
+                text-shadow: 2;
+            }
+            input{
+                background-color: aqua;
+            }
+        </style>
+        	
+        
+	<script>
+	$(function() {
+		
+      //  alert(5);
+		$("#login").validate()
+	});
+        </script>
+        
+    </head>
+    <body>
+    
+        
+        
+              <div class="col-md-12 maindiv">
+                   <form action="login.php" method="post" id="login">
+            <div class="row"> 
+            
+            <div class="col-md-4 login form-group">
+             
+                Username:  <input type="text" name="username" class="form-control" id="uname" ><br/>
+               
+                </div>
+                
+                <div class="col-md-4 longin2 form-group">
+                 password: <input type="password" name="password" class="form-control" id="password">
+                
+                </div>
+        </div>
+                  
+                   <button class="btn btn-success" type="submit">login</button>
+        <button class="btn btn-danger" type="clear">Clear</button><br/>
+                       <a href="#">forget password?</a>
+                       
+                       </form>
+            </div>
+        
+        </body>
+</html>
